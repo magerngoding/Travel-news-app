@@ -1,7 +1,8 @@
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:tess/home_page.dart';
+import 'package:tess/news_detail_page.dart';
 
 import './shared/size_config.dart';
 import './shared/theme.dart';
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: NewsDetailPage(),
     );
   }
 }
