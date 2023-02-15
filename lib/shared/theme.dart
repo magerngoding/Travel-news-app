@@ -16,6 +16,8 @@ Color darkBlueColor = Color(0xff19202d);
 
 double kBorderRadius = 16;
 
+double kPaddingHorizontal = 40;
+
 final kBorder = OutlineInputBorder(
   borderRadius: BorderRadius.circular(kBorderRadius),
   borderSide: BorderSide.none,
