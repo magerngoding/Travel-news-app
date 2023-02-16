@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:tess/home_page.dart';
 import 'package:tess/news_detail_page.dart';
+import 'package:tess/profile_page.dart';
 import './shared/theme.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NewsDetailPage(),
+      home: ProfilePage(),
       debugShowCheckedModeBanner: false,
     );
   }
