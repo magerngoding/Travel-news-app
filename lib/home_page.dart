@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:tess/news_detail_page.dart';
 
 import './shared/theme.dart';
 
@@ -177,15 +178,26 @@ class _HomePageState extends State<HomePage> {
                     ),
                     child: Column(
                       children: [
-                        Container(
-                          height: 164,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(kBorderRadius),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                'assets/bali.jpg',
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => NewsDetailPage(),
                               ),
-                              fit: BoxFit.cover,
+                            );
+                          },
+                          child: Container(
+                            height: 164,
+                            decoration: BoxDecoration(
+                              borderRadius:
+                                  BorderRadius.circular(kBorderRadius),
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  'assets/bali.jpg',
+                                ),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),

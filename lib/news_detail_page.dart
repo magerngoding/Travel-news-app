@@ -2,6 +2,7 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:tess/profile_page.dart';
 import 'package:tess/shared/theme.dart';
 
 class NewsDetailPage extends StatefulWidget {
@@ -121,10 +122,20 @@ class _NewsDetailPageState extends State<NewsDetailPage> {
                   SizedBox(
                     width: 13,
                   ),
-                  CircleAvatar(
-                    radius: 13,
-                    backgroundColor: blueColor,
-                    backgroundImage: AssetImage('assets/profile.jpg'),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ProfilePage(),
+                        ),
+                      );
+                    },
+                    child: CircleAvatar(
+                      radius: 13,
+                      backgroundColor: blueColor,
+                      backgroundImage: AssetImage('assets/profile.jpg'),
+                    ),
                   ),
                   SizedBox(
                     width: 13,
